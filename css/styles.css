@@ -1,0 +1,7 @@
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/space.png") no-repeat;
+    background-size: cover;
+}
