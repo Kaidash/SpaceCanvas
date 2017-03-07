@@ -36,7 +36,7 @@ if(window.innerHeight>500)
 
 function Factory(){
 
-    this.randomImage = Math.floor(Math.random() * arrayImages.length );
+    this.randomImage = Math.floor(Math.random() * asteroidsArray.length );
     this.x =  Math.round( Math.random() * w);
     this.y =  Math.round( Math.random() * h);
     this.heightImg =  Math.round( Math.random() * 70) + 1;
@@ -121,11 +121,10 @@ window.requestAnimFrame = (function(){
         };
 })();
 
-(function init(){
-    for(let i = 0; i < patriclesNum; i++){
-        particles.push(new Factory);
-    }
-})();
+for(let i = 0; i < patriclesNum; i++){
+    particles.push(new Factory);
+}
+
 
 (function loop(){
     draw();
